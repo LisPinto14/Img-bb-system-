@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #222;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+
+.homepage {
+  text-align: center;
+}
+
+.homepage-links {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2d8cf0;
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #206bb5;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.product-form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea,
+.product-form select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #f9fafb;
+}
+
+.product-form textarea {
+  resize: vertical;
+}
+
+.product-form input[type="file"] {
+  border: none;
+  background: none;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 24px;
+  color: #2d8cf0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #206bb5;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.product-card {
+  display: flex;
+  gap: 20px;
+  background: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 18px;
+  align-items: center;
+}
+
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #e4e7eb;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.product-info .description {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 6vw 18px 6vw;
+  }
+  .products-list {
+    gap: 14px;
+  }
+  .product-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+  .product-card img {
+    width: 100%;
+    height: 160px;
+  }
+}
